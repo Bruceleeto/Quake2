@@ -367,7 +367,7 @@ void FS_InitFilesystem (void)
 	Cmd_AddCommand ("dir", FS_Dir_f );
 
 	fs_basedir = Cvar_Get ("basedir", ".", CVAR_NOSET);
-	Com_sprintf(fs_gamedir, sizeof(fs_gamedir), "%s/pc/baseq2", fs_basedir->string);
+	Com_sprintf(fs_gamedir, sizeof(fs_gamedir), "%s/cd/baseq2", fs_basedir->string);
 
 	fs_gamedirvar = Cvar_Get ("game", "", CVAR_LATCH|CVAR_SERVERINFO);
 	if (fs_gamedirvar->string[0])

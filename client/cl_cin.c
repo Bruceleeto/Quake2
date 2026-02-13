@@ -132,7 +132,7 @@ void SCR_PlayCinematic(char *arg)
     if(dot)
         *dot = '\0';
 
-    Com_sprintf(name, sizeof(name), "/pc/baseq2/video/%s.mpg", basename);
+    Com_sprintf(name, sizeof(name), "/cd/baseq2/video/%s.mpg", basename);
 
     printf("SCR_PlayCinematic: Playing MPEG '%s'\n", name);
 

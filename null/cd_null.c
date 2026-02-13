@@ -91,7 +91,7 @@ void S_PlayADPCM(const char *name)
         }
     }
     
-    sprintf(filename, "/pc/baseq2/sound/%s", name);
+    sprintf(filename, "/cd/baseq2/sound/%s", name);
     ext = strstr(filename, ".wav");
     if (ext) strcpy(ext, ".dca");
     
@@ -206,7 +206,7 @@ void CDAudio_Play(int track, qboolean loop)
     
     CDAudio_Stop();
     
-    sprintf(filename, "/pc/baseq2/music/track%02d.dca", track);
+    sprintf(filename, "/cd/baseq2/music/track%02d.dca", track);
     
     music_file = fopen(filename, "rb");
     if (!music_file)
